@@ -10,7 +10,7 @@
 <div class="content">
   <h1><img src="./data/logo.png" alt="Seal Figure" width="50" style="vertical-align: middle;" /><strong>SEAL: Semantic Attention Learning for Long Video Representation</strong></h1>
   <!-- <h2 style="text-align:center;">CVPR 2024</h2> -->
-  <p id="authors"><a href="https://lan-lw.github.io/" style="color:blue;">Lan Wang<sup>1,2</sup></a> <a href="https://issaccyj.github.io/"  style="color:blue;">Yujia Chen<sup>2</sup></a> <a href="https://l2ior.github.io/"  style="color:blue;">Wen-Sheng Chu<sup>2</sup></a> <br></a><a href="https://vishnu.boddeti.net/"  style="color:blue;">Vishnu Boddeti<sup>1</sup></a> <a href="https://dutran.github.io/"  style="color:blue;">Du Tran<sup>2</sup></a><br>
+  <p id="authors"><a href="https://lan-lw.github.io/" style="color:blue;">Lan Wang<sup>1,2</sup></a> <a href="https://issaccyj.github.io/"  style="color:blue;">Yujia Chen<sup>2</sup></a> <a href="https://dutran.github.io/"  style="color:blue;">Du Tran<sup>2</sup></a> <br></a><a href="https://vishnu.boddeti.net/"  style="color:blue;">Vishnu Boddeti<sup>1</sup></a> <a href="https://l2ior.github.io/"  style="color:blue;">Wen-Sheng Chu<sup>2</sup></a><br>
 
     <span style="font-size: 16px"><br>
         <sup>1</sup> Michigan State University  &nbsp  <sup>2</sup> Google <br>     
@@ -19,11 +19,16 @@
   <img src="./data/web_teaser.png" class="teaser-gif" style="width:100%;">
     <font size="+2">
           <p style="text-align: center;">
-            <a href="https://arxiv.org/abs/xxxx" target="_blank">[arXiv]</a> &nbsp;&nbsp;&nbsp;&nbsp;
-	          <a href="https://github.com/lan-lw/SEAL.github.io/" target="_blank">[Code]</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://arxiv.org/pdf/2412.01798" target="_blank">[arXiv]</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<!-- 	          <a href="https://github.com/SEAL-lvu/SEAL-lvu.github.io/" target="_blank">[Code]</a> &nbsp;&nbsp;&nbsp;&nbsp; -->
           </p>
     </font>
-    <p>**Long Video Representation with Semantic Attention Learning (SEAL):** Conventional uniform sampling results in redundant and cluttered visual information, making it difficult for both AI models and human brains to process efficiently. Decomposing long videos into semantic entities such as scenes, objects, and actions reduces temporal redundancy, thus making model training and inference more efficient. In this example, the long video **$\mathcal{V}$** is decomposed into 4 **scene tokens** (S1--S4), 6 **object tokens** (O1--O6), and 4 **action/event tokens** (A1--A4). A query-aware attention learning module improves downstream task performance by focusing on relevant information rather than processing everything, as shown with queries (Q1--Q4) and their most relevant tokens. *(Best viewed in color)*
+    <p>
+  <strong>Long Video Representation with Semantic Attention Learning (SEAL):</strong> 
+  Conventional uniform sampling results in redundant and cluttered visual information, making it difficult for both AI models and human brains to process efficiently. 
+  Decomposing long videos into semantic entities such as scenes, objects, and actions reduces temporal redundancy, thus making model training and inference more efficient. 
+  In this example, the long video <strong>𝒱</strong> is decomposed into 4 <strong>scene tokens</strong> (S1--S4), 6 <strong>object tokens</strong> (O1--O6), and 4 <strong>action/event tokens</strong> (A1--A4). 
+  A query-aware attention learning module improves downstream task performance by focusing on relevant information rather than processing everything, as shown with queries (Q1--Q4) and their most relevant tokens. 
 </p>
 </div>
 
@@ -57,14 +62,17 @@
 <div class="content">        
     <h2>Method</h2>
     <img class="summary-img" src="./data/web_lvu.png" style="width:100%;"> <br>
-    <p> During *semantic decomposition*, a long video **$\mathcal{V}$** is decomposed into semantic tokens representing scenes, objects, and actions. Then, during *attention learning*, these tokens and the query **q** are optimized for query relevance **R(⋅)** and token diversity **S(⋅)**. The resulting attended token subset is then passed to a vision or an MLLM head for predictions.
-</p>    
+    <p>
+  During <em>semantic decomposition</em>, a long video <strong>𝒱</strong> is decomposed into semantic tokens representing scenes, objects, and actions. 
+  Then, during <em>attention learning</em>, these tokens and the query <strong>q</strong> are optimized for query relevance <strong>R(⋅)</strong> and token diversity <strong>S(⋅)</strong>. 
+  The resulting attended token subset is then passed to a vision or an MLLM head for predictions.
+</p>   
   </div>
 
 <div class="content">        
     <h2>Qualitative Results</h2>
     <img class="summary-img" src="./data/web_vis.png" style="width:100%;"> <br>
-    <p> Two long videos visualized with questions, multiple choice options, and SEAL predicted answers. SEAL attends to relevant entities such as ``royal family'' and ``stool'' (Q1.a), different ``meals'' and ``drinks'' (Q2.a), ``scene'' and ``location'' (Q2.b) and correctly answers these questions. Although attending to relevant ``push-up'' activity (Q2.c), SEAL fails to predict the right answer due to the challenging in the causal reasoning question.</p>    
+    <p> Two long videos visualized with questions, multiple choice options, and SEAL predicted answers. SEAL attends to relevant entities such as ''royal family'' and ''stool'' (Q1.a), different ''meals'' and ''drinks'' (Q2.a), ''scene'' and ''location'' (Q2.b) and correctly answers these questions. Although attending to relevant ''push-up'' activity (Q2.c), SEAL fails to predict the right answer due to the challenging in the causal reasoning question.</p>    
   </div>
 
 
@@ -73,7 +81,7 @@
   <code> @article{lan2024seal,<br>
   &nbsp;&nbsp;title={SEAL: Semantic Attention Learning for Long Video Representation},<br>
   &nbsp;&nbsp;author={Wang, L and Chen, Y and Chu, W and Boddeti, V and Tran, D},<br>
-  &nbsp;&nbsp;booktitle={arXiv preprint arxiv:xxxx.xxxx},<br>
+  &nbsp;&nbsp;booktitle={arXiv preprint arxiv:2412.01798},<br>
   &nbsp;&nbsp;year={2024}<br>
   } </code> 
 </div>
