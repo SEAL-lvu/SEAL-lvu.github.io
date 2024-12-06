@@ -3,7 +3,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>RB-Modulation</title>
 <link href="./style.css" rel="stylesheet">
-<!-- <script type="text/javascript" src="./DreamBooth_files/jquery.js"></script> -->
 </head>
 
 <body>
@@ -37,14 +36,6 @@
   <p>Long video understanding presents challenges due to the inherent high computational complexity and redundant temporal information. An effective representation for long videos must process such redundancy efficiently while preserving essential contents for downstream tasks. This paper introduces SEmantic Attention Learning (SEAL), a novel unified representation for long videos. To reduce computational complexity, long videos are decomposed into three distinct types of semantic entities: scenes, objects, and actions, allowing models to operate on a handful of entities rather than a large number of frames or pixels. To further address redundancy, we propose an attention learning module that balances token relevance with diversity formulated as a subset selection optimization problem. Our representation is versatile, enabling applications across various long video understanding tasks. Extensive experiments show that SEAL significantly outperforms state-of-the-art methods in video question answering and temporal grounding tasks and benchmarks including LVBench, MovieChat-1K, and Ego4D.</p>
 </div>
 
-<!-- 
-<div class="content">
-    <h2>Problem Statement</h2>
-    <p>In <strong>training-free stylization</strong>, recent methods [12, 13, 14] manipulate keys and values within the attention layers using just one reference style image. These methods face challenges in both extracting the style from the reference style image and accurately transferring the style to a target content image. For instance, during the DDIM inversion step [20] utilized by StyleAligned [12], fine-grained details tend to be compromised. To mitigate this issue, InstantStyle [13] incorporates features from the reference style image into specific layers of a previously trained IP-Adapter [21]. However, identifying the exact layer for feature injection in a model is complex and not universally applicable across models. Also, feature injection can cause content leakage from the style image into the generated content. Moving on to <strong>content-style composition</strong>, InstantStyle [13] employs a ControlNet [22] (an additionally trained network) to preserve image layout, which inadvertently limits its diversity.
-    <br> 
-    We introduce Reference-Based Modulation (<strong>RB-Modulation</strong>), a novel approach for content and style personalization that eliminates the need for training or finetuning diffusion models (e.g. ControlNet [22] or adapters [21, 9]). By incorporating style features into the controller’s terminal cost, we modulate the drift field in diffusion models’ reverse dynamics, enabling training-free personalization. Further, unlike conventional attention processors that often leak content from the reference style image, we propose an Attention Feature Aggregation (AFA) module that decouples content from the reference style image.
-    </p>    
-    </div> -->
 <div class="content">
     <h2>Contributions</h2>
     <ul>
