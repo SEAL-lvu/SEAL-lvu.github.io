@@ -1,4 +1,4 @@
-# <img src="./data/logo.png" alt="Seal Figure" width="50" style="vertical-align: middle;" />SEAL: Semantic Attention Learning for Long Video Representation
+# <img src="./data/logo.png" alt="Seal Figure" width="50" style="vertical-align: middle;" />SEAL: SEmantic Attention Learning for Long Video Representation
 
 <img src="./data/web_teaser.png" alt="Teaser Figure" style="width:100%;">
 
