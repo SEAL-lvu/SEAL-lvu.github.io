@@ -10,10 +10,10 @@
 ## Citation
 
 ```
-@article{rout2024rbmodulation,
+@inproceedings{wang2025seal,
   title={SEAL: Semantic Attention Learning for Long Video Representation},
-  author={Wang, L and Chen, Y and Chu, W and Boddeti, V and Tran, D},
-  journal={arXiv preprint arXiv:xxxx.xxxx},
-  year={2024}
+  author={Wang, Lan and Chen, Yujia and Tran, Du and Boddeti, Vishnu Naresh and Chu, Wen-Sheng},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  year={2025}
 }
 ```
